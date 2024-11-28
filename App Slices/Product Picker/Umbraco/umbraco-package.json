@@ -1,0 +1,54 @@
+{
+    "$schema": "../../umbraco-package-schema.json",
+    "name": "Ucommerce",
+    "version": "0.1.0",
+    "extensions": [
+        {
+            "type": "propertyEditorUi",
+            "alias": "Ucommerce.PropertyEditorUi.ProductPicker",
+            "name": "Ucommerce Product Picker",
+            "element": "/App_Plugins/Ucommerce/product-picker.js",
+            "elementName": "my-suggestions-property-editor-ui",
+            "meta": {
+                "label": "Product Picker",
+                "icon": "icon-shopping-basket",
+                "group": "common",
+                "propertyEditorSchemaAlias": "Umbraco.Plain.String",
+                "settings": {
+                    "properties": [
+                        {
+                            "alias": "baseApiUrl",
+                            "label": "Base Api Url",
+                            "description": "The base url for the Ucommerce API",
+                            "propertyEditorUiAlias": "Umb.PropertyEditorUi.TextBox"
+                        },
+                        {
+                            "alias": "clientId",
+                            "label": "Client Id",
+                            "description": "The client id for the Ucommerce API",
+                            "propertyEditorUiAlias": "Umb.PropertyEditorUi.TextBox"
+                        },
+                        {
+                            "alias": "clientSecret",
+                            "label": "Client Secret",
+                            "description": "The client secret for the Ucommerce API",
+                            "propertyEditorUiAlias": "Umb.PropertyEditorUi.TextBox"
+                        },
+                        {
+                            "alias": "cultureCode",
+                            "label": "Culture Code",
+                            "description": "The culture code for the Ucommerce API",
+                            "propertyEditorUiAlias": "Umb.PropertyEditorUi.TextBox"
+                        }
+                    ],
+                    "defaultData": [
+                        {
+                            "alias": "cultureCode",
+                            "value": "en-US"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
