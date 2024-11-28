@@ -2,7 +2,7 @@
 
 This example shows an example of a Umbraco custom property using the Ucommerce product picker app slice.
 
-These are the most important files for creating a Custom Property Editor. We have omitted all the Vite and Umbraco specific files.
+These are the most important files for creating a Custom Property Editor. We have omitted all the Vite and Umbraco specific files. The Umbraco documentation has a [good article on how to create a Custom property editor](https://docs.umbraco.com/umbraco-cms/tutorials/creating-a-property-editor).
 
 ## Files
 
